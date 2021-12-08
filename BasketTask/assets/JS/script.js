@@ -1,7 +1,5 @@
 let button=document.querySelectorAll(".btn");
 let myBasketStorage=localStorage.getItem("basket");
-let tab=document.getElementById('myTable');
-console.log(tab);
 function createStorage()
 {
     if (!localStorage.getItem("basket")) {
@@ -15,8 +13,8 @@ function basketCount()
 }
 basketCount();
 
-button.forEach(btn => {
-    btn.addEventListener("click",function(e)
+button.forEach(btncard => {
+    btncard.addEventListener("click",function(e)
     {
         e.preventDefault();
         let Id=this.parentElement.parentElement.getAttribute("data-id");
@@ -48,4 +46,7 @@ function getBasket(Id,price,name,image)
     }
     return basket;
 }
+
+
+
 
