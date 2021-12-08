@@ -1,0 +1,41 @@
+.mycard{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.mycard{
+    overflow: hidden;
+}
+.mycard img{
+    transition: .2s ease-in-out;
+}
+.mycard:hover > img{
+    transform: scale(1.04);
+}
+.mycard:hover .price{
+    transform: translateX(1%);
+}
+.card-body .card-title{
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.mycard:hover > .card-body > .card-title{
+    letter-spacing: 1px;
+    color: darkred;
+}
+.price{
+    color: darkred;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.fa-trash{
+    font-size: 24px; 
+    color: red;
+    transition: .3s ease-in-out;
+}
+.fa-trash:hover{
+    transform: scale(1.2);
+    color: rgba(255, 0, 0, 0.678);
+}
+.incdecbuttons{
+    padding: 2px;   
+}
